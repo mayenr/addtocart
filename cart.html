@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+            <nav id="navcart" style="margin-top: 5vh;">
+            <h2>My Cart</h2>
+                <ul>
+                <li style="padding-bottom: 10px;">
+                    <button type="button" class="btn btn-secondary" onclick="history.back()">Back
+                    </button>
+                </li>
+                <li class="cart">
+                    <button type="button" class="btn btn-secondary" style="width: 30vh;">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon><span>0</span> Items in Cart
+                    </a></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-products" style="padding-top: 50px;">
+        <div class="product-header">
+            <h5 class="product-title" style="text-align: center;">PRODUCT</h5>
+            <h5 class="price sm-hide">PRICE</h5>
+            <h5 class="quantity sm-hide">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+        </div>
+    
+        <button type="button" class="btn btn-secondary" style="margin-top: 15px; margin-left: 40vw;">Checkout
+        </button>
+    </div>
+        
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
